@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://jorgevitiello.github.io/task-management-frontend/static/css/main.5ac26d30.chunk.css",
+    "main.js": "https://jorgevitiello.github.io/task-management-frontend/static/js/main.cb170a00.chunk.js",
+    "main.js.map": "https://jorgevitiello.github.io/task-management-frontend/static/js/main.cb170a00.chunk.js.map",
+    "runtime~main.js": "https://jorgevitiello.github.io/task-management-frontend/static/js/runtime~main.79febc4a.js",
+    "runtime~main.js.map": "https://jorgevitiello.github.io/task-management-frontend/static/js/runtime~main.79febc4a.js.map",
+    "static/js/2.de05c31b.chunk.js": "https://jorgevitiello.github.io/task-management-frontend/static/js/2.de05c31b.chunk.js",
+    "static/js/2.de05c31b.chunk.js.map": "https://jorgevitiello.github.io/task-management-frontend/static/js/2.de05c31b.chunk.js.map",
+    "index.html": "https://jorgevitiello.github.io/task-management-frontend/index.html",
+    "precache-manifest.8400790b65b9ff6c2f1e29f66928330b.js": "https://jorgevitiello.github.io/task-management-frontend/precache-manifest.8400790b65b9ff6c2f1e29f66928330b.js",
+    "service-worker.js": "https://jorgevitiello.github.io/task-management-frontend/service-worker.js",
+    "static/css/main.5ac26d30.chunk.css.map": "https://jorgevitiello.github.io/task-management-frontend/static/css/main.5ac26d30.chunk.css.map"
+  }
+}
