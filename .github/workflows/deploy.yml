@@ -15,9 +15,6 @@ jobs:
       - name: Install NVM
         run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
         
-      - name: Version NVM
-        run: nvm -v
-        
       - name: NVM AND NODE
         run: nvm install node
         
