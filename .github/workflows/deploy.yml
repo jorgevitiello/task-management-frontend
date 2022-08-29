@@ -11,6 +11,21 @@ jobs:
 
       - name: Yarn Cache
         uses: c-hive/gha-yarn-cache@v1
+        
+      - name: Install NVM
+        run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+        
+      - name: Version NVM
+        run: nvm -v
+        
+      - name: NVM AND NODE
+        run: nvm install node
+        
+      - name: NVM INSTALL VERSION 
+        run: nvm install 14.15
+        
+      - name: NVM USER
+        run: nvm use v14.15
 
       - name: Install dependencies
         run: yarn
