@@ -13,10 +13,7 @@ jobs:
         uses: c-hive/gha-yarn-cache@v1
         
       - name: Install NVM
-        run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-        
-      - name: NVM CONFIG
-        run: ". ~/.nvm/nvm.sh"
+        run: sudo npm install -g nvm
             
       - name: NVM VERSION
         run: nvm --version 
