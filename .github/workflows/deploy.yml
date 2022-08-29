@@ -13,6 +13,9 @@ jobs:
 
       - name: Yarn Cache
         uses: c-hive/gha-yarn-cache@v1
+        
+      - name: NODE
+        run: node --version
 
       - name: Install dependencies
         run: yarn
