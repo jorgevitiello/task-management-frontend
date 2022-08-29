@@ -17,18 +17,16 @@ jobs:
       - name: "nvm"
         shell: >
           curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-        with:
-          executable: /bin/bash
-          chdir: "{{ ansible_env.HOME }}"
-          creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
+        run: /bin/bash
+            "{{ ansible_env.HOME }}"
+            "{{ ansible_env.HOME }}/.nvm/nvm.sh"
 
       - name: "node"
         shell: >
           . {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install {{ item }}
-        with:
-          executable: /bin/bash
-          chdir: "{{ ansible_env.HOME }}"
-          creates: "{{ ansible_env.HOME }}/.nvm/versions/{{ item }}"
+        run: /bin/bash
+            "{{ ansible_env.HOME }}"
+            "{{ ansible_env.HOME }}/.nvm/versions/{{ item }}"
     
       - name: NVM VERSION
         run: nvm --version 
