@@ -16,7 +16,7 @@ jobs:
         run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
         
       - name: NVM CONFIG
-        run: . ~/.nvm/nvm.sh
+        run: ". ~/.nvm/nvm.sh"
             
       - name: NVM VERSION
         run: nvm --version 
