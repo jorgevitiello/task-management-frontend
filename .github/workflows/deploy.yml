@@ -13,8 +13,14 @@ jobs:
         uses: c-hive/gha-yarn-cache@v1
         
       - name: Install NVM
-        run: sudo npm install -g nvm
-            
+        run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+      - name: CONFIG
+        run: export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+      - name: LTS
+        run: nvm install --lts
+    
       - name: NVM VERSION
         run: nvm --version 
         
