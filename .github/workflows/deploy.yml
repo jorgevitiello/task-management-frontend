@@ -15,14 +15,11 @@ jobs:
       - name: Install NVM
         run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
         
-      - name: NVM VAR
-        run: command -v nvm >/dev/null 2>&1 || {
-              if [[-s "${NVM_DIR}/nvm.sh"]]; then
-              source "${NVM_DIR}/nvm.sh"
-              elif [[-s "${HOME}/.nvm/nvm.sh"]]; then
-              source "${HOME}/.nvm/nvm.sh"
-              fi
-              }
+      - name: NVM EXPORT
+        run: export NVM_DIR="$HOME/.nvm"
+            
+      - name: NVM SOURCE
+        run: source "$NVM_DIR/nvm.sh"
         
       - name: NVM AND NODE
         run: nvm install node
